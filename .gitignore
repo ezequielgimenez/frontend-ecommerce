@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-usuarios-de-prueba.txt
+
 # dependencies
 /node_modules
 /.pnp
@@ -28,7 +28,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
-usuarios-de-prueba.txt
+
 
 # vercel
 .vercel

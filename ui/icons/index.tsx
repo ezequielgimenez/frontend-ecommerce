@@ -1,6 +1,6 @@
 import Logo from "./logo.svg";
 import Carrito from "./carrito.svg";
-import Burger from "./Burger.svg";
+import Burger from "./burger.svg";
 import styled from "styled-components";
 
 export const LogoIcon = styled(Logo)`
