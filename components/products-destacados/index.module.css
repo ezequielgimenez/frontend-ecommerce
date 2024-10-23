@@ -1,0 +1,37 @@
+.containerMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 375 en adelante */
+@media (min-width: 375px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* 768 en adelante */
+@media (min-width: 768px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* 1280 en adelante */
+@media (min-width: 1280px) {
+  .containerCard {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

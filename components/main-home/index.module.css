@@ -1,0 +1,48 @@
+.containerDesktop {
+  display: block;
+}
+
+.containerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 10;
+  margin-left: 20px;
+}
+
+.containerImg {
+  position: relative;
+  width: 1100px; /* Cambia esto al ancho deseado */
+  overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+}
+
+.containerImg img {
+  width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+}
+
+@media (min-width: 375px) {
+  .containerDesktop {
+    display: none;
+  }
+  .containerMobile {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerDesktop {
+    display: block;
+  }
+  .containerMobile {
+    display: none;
+  }
+}

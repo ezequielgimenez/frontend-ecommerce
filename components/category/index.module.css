@@ -1,0 +1,64 @@
+.containerMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerButtonSelectCategory {
+  margin-top: 40px;
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCard {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.containerRemoveCarrito {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  margin: 40px 0;
+}
+
+.pagination span {
+  padding: 0 10px;
+}
+/* 375 en adelante */
+@media (min-width: 375px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* 768 en adelante */
+@media (min-width: 768px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* 1280 en adelante */
+@media (min-width: 1280px) {
+  .containerCard {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0;
+  }
+}

@@ -1,0 +1,30 @@
+.containerMain {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+}
+
+.containerIngreso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 15px 0;
+}
+
+@media (min-width: 375px) {
+  .containerImg {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerImg {
+    display: block;
+  }
+}

@@ -1,0 +1,79 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0 150px 0;
+}
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+  grid-template-rows: 1fr 1fr; /* Dos filas */
+  gap: 25px; /* Espacio entre las imágenes */
+  width: 1200px;
+  height: 493px;
+}
+
+/* Elementos específicos para cada imagen */
+.item1 {
+  grid-column: 1; /* Primera columna */
+  grid-row: 1 / 3; /* Ocupa dos filas completas */
+  cursor: pointer;
+}
+
+.item2 {
+  grid-column: 2; /* Segunda columna */
+  grid-row: 1; /* Primera fila */
+  cursor: pointer;
+}
+
+.item3 {
+  grid-column: 2; /* Segunda columna */
+  grid-row: 2; /* Segunda fila */
+  cursor: pointer;
+}
+
+/* Estilos comunes para las imágenes */
+.img1 {
+  width: 592px;
+  height: 493px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img2,
+.img3 {
+  width: 592px;
+  height: 236px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 375px) {
+  .containerGrid {
+    display: none;
+  }
+
+  .containerImg {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+  }
+
+  .containerImg img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerGrid {
+    display: grid;
+  }
+
+  .containerMobile {
+    display: none;
+  }
+}

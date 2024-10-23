@@ -1,0 +1,59 @@
+.containerMain {
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: space-around;
+  align-items: center;
+  height: 750px;
+}
+
+.containerImg {
+  flex-grow: 1; /* Asegura que el div ocupe todo el espacio disponible */
+  max-width: 700px;
+  width: 100%; /* Que ocupe el 100% del ancho */
+  height: 100%; /* Ocupe también todo el alto si es necesario */
+}
+
+.containerImg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.containerIngreso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .containerMain {
+    height: 500px;
+  }
+  .containerImg {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerMain {
+    height: 750px;
+  }
+  .containerImg {
+    display: block;
+  }
+}
