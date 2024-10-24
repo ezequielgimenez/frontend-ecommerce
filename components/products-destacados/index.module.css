@@ -46,6 +46,12 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .containerTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /* 1280 en adelante */
