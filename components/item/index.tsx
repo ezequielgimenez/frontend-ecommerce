@@ -35,7 +35,7 @@ export function Item() {
         router.push("/edit-profile");
       }
     } else {
-      alert("Inicia session para realizar la compra");
+      alert("Inicia sesión para realizar la compra");
       router.push("/auth-access");
     }
   };
