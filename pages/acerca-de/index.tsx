@@ -23,9 +23,11 @@ export default function ContactoPage() {
           <MyTitleCard>Acerca de Modakelar</MyTitleCard>
           <PriceText>¿Quiénes Somos?</PriceText>
           <SubtitleItem>
-            En Modakelar, nuestro objetivo es ofrecer una experiencia de compra
-            única y accesible para quienes buscan calzado e indumentaria de
-            calidad.
+            Modakelar nació con la pasión de ofrecer una experiencia de compra
+            única en calzado y moda. Nos especializamos en la venta de
+            zapatillas, zapatos, botitas e indumentaria de alta calidad,
+            seleccionando cuidadosamente cada uno de nuestros productos para que
+            nuestros clientes disfruten tanto de la comodidad como del estilo.
           </SubtitleItem>
 
           <PriceText>Nuestra Misión</PriceText>
