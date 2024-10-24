@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.textContainer a :hover {
+  color: #2a59fe !important;
+}
+
 .textContainerPhone {
   display: none;
 }
