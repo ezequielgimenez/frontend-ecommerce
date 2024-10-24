@@ -72,7 +72,19 @@
   outline: none;
 }
 
-/* 768 */
+/* 360px */
+@media (min-width: 360px) {
+  .inputWrapper {
+    width: 230px;
+    height: 38px;
+    padding-left: 15px;
+  }
+  .inputSearch {
+    font-size: 0.9rem;
+  }
+}
+
+/* 375px */
 @media (min-width: 375px) {
   .inputWrapper {
     width: 230px;

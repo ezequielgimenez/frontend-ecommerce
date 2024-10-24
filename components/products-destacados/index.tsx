@@ -53,7 +53,7 @@ export function ProductosDestacados({ data }) {
           content="zapatillas, zapatos, botas, destacados"
         />
       </Head>
-      <div>
+      <div className={style.containerTitle}>
         <MyTitleCard>Productos Destacados</MyTitleCard>
       </div>
       <div className={style.containerCard}>

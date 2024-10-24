@@ -8,9 +8,12 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute; /* Mantiene el contenido en posición absoluta */
   top: 10px; /* Ajusta la distancia desde la parte superior */
-  left: 15%; /* Mantiene la posición desde la izquierda */
   z-index: 10; /* Asegúrate de que el contenido esté sobre la imagen */
   text-align: center; /* Centra el texto dentro del contenido */
 }
@@ -25,4 +28,10 @@
   width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+}
+
+@media (min-width: 360px) {
+  .content {
+    width: 290px;
+  }
 }

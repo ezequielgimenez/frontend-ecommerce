@@ -17,6 +17,16 @@
   padding: 0 70px;
 }
 
+@media (min-width: 360px) {
+  .containerMain {
+    height: auto;
+  }
+  .cardInfo {
+    width: 300px;
+    padding: 10px;
+  }
+}
+
 @media (min-width: 375px) {
   .containerMain {
     height: auto;

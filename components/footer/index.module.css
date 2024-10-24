@@ -35,6 +35,12 @@
   align-items: center;
 }
 
+@media (min-width: 360px) {
+  .lineFooter {
+    width: 300px;
+  }
+}
+
 @media (min-width: 375px) {
   .lineFooter {
     width: 300px;

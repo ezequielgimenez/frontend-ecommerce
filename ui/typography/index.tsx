@@ -9,8 +9,8 @@ export const TextMain = styled.p`
   font-size: 55px;
   color: #252b42;
 
-  @media (min-width: 375px) {
-    font-size: 22px;
+  @media (min-width: 360px) {
+    font-size: 20px;
   }
 
   @media (min-width: 768px) {
@@ -29,6 +29,11 @@ export const TextSubtitle = styled.p`
   padding: 10px 0;
   font-size: 20px;
   color: #737373;
+
+  @media (min-width: 360px) {
+    font-size: 12px;
+    text-align: center;
+  }
 
   @media (min-width: 375px) {
     font-size: 12px;
@@ -74,6 +79,11 @@ export const MyTitleCard = styled.p`
   font-family: "Montserrat", sans-serif; /* Usar Montserrat */
 
   font-size: 35px;
+
+  @media (min-width: 360px) {
+    font-size: 25px;
+    text-align: center;
+  }
 
   @media (min-width: 375px) {
     font-size: 25px;
@@ -164,8 +174,12 @@ export const LabelComp = styled.label`
 
 export const TitleIngreso = styled(TextMain)`
   font-family: "Montserrat", sans-serif; /* Usar Montserrat */
-
   font-size: 40px;
+
+  @media (min-width: 360px) {
+    font-size: 35px;
+    text-align: center;
+  }
 `;
 
 //tipografia title Item product

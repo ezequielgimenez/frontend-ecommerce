@@ -131,6 +131,16 @@
   padding: 0 10px;
 }
 
+/* 360 en adelante */
+@media (min-width: 360px) {
+  .cardMain {
+    width: 290px;
+    height: auto;
+    margin-left: 0;
+    gap: 20px;
+  }
+}
+
 /* 375 en adelante */
 
 @media (min-width: 375px) {
@@ -143,8 +153,18 @@
 
 @media (min-width: 375px) {
   .containerImg {
-    width: 225px;
-    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 224px;
+    height: 224px;
+    padding: 15px 0;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+  }
+
+  .containerImg img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 

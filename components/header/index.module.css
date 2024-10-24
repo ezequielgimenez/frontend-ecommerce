@@ -111,7 +111,7 @@
 /* ////////////////////////////// */
 
 /* 375 */
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   .headerMain {
     display: none;
   }

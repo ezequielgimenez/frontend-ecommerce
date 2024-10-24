@@ -30,6 +30,14 @@
   margin-top: 40px;
 }
 
+/* 360 en adelante */
+@media (min-width: 360px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 /* 375 en adelante */
 @media (min-width: 375px) {
   .containerCard {

@@ -151,4 +151,13 @@ export const ButtonBuyItem = styled(MyButton)`
   height: 63px;
   background-color: #737373;
   font-size: 20px;
+  margin: 20px 0;
+
+  @media (min-width: 360px) {
+    width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    width: 421px;
+  }
 `;

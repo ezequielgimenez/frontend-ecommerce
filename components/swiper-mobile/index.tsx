@@ -43,8 +43,6 @@ export function SwiperMobile() {
       autoplay={{ delay: 8000 }} // Autoplay activado con duración de 2 segundos
       navigation // Flechas de navegación
       pagination={{ clickable: true }} // Indicadores de paginación
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
         <div className={style.containerMain}>

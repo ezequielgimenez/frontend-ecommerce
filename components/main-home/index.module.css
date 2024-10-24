@@ -29,7 +29,7 @@
   object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
 }
 
-@media (min-width: 375px) {
+@media (min-width: 360px) {
   .containerDesktop {
     display: none;
   }
