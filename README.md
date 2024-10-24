@@ -40,6 +40,6 @@ yarn dev
 Abre tu navegador y ve a http://localhost:3000.
 
 ### 📦 Despliegue en Vercel
-Este proyecto está desplegado usando Vercel para garantizar un hosting rápido y fiable. Puedes verlo en producción en el siguiente enlace:
+Este proyecto está desplegado usando Vercel:
 
 ## 🌐 [https://modakelar.vercel.app/](https://modakelar.vercel.app/)
