@@ -14,7 +14,7 @@ const nextConfig = withSvgr({
       "media2.solodeportes.com.ar",
       "nikearprod.vtexassets.com",
       "static.nike.com",
-    ], // Agrega aquí los dominios permitidos
+    ],
   },
 });
 
