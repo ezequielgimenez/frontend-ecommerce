@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import { TextMain, TextSubtitle } from "ui/typography";
 import { ButtonMain } from "ui/buttons";
@@ -18,7 +19,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import { useRouter } from "next/router";
-import { useMe } from "lib/hooks";
 
 export function MainHome() {
   const router = useRouter();
@@ -65,7 +65,13 @@ export function MainHome() {
                 </ButtonMain>
               </div>
               <div className={style.containerImg}>
-                <img src="/images/banner1.webp" alt="Banner 1" />
+                <Image
+                  src="/images/banner1.webp"
+                  alt="Banner 1"
+                  width={1293}
+                  height={622}
+                  priority
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -79,7 +85,13 @@ export function MainHome() {
                 </ButtonMain>
               </div>
               <div className={style.containerImg}>
-                <img src="/images/banner2.webp" alt="Banner 2" />
+                <Image
+                  src="/images/banner2.webp"
+                  alt="Banner 2"
+                  width={1293}
+                  height={622}
+                  priority
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -95,7 +107,13 @@ export function MainHome() {
                 </ButtonMain>
               </div>
               <div className={style.containerImg}>
-                <img src="/images/banner3.webp" alt="Banner 3" />
+                <Image
+                  src="/images/banner3.webp"
+                  alt="Banner 3"
+                  width={1293}
+                  height={622}
+                  priority
+                />
               </div>
             </div>
           </SwiperSlide>

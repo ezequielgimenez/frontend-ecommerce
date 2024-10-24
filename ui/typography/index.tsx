@@ -45,6 +45,7 @@ export const TextSubtitle = styled.p`
 
   @media (min-width: 1280px) {
     font-size: 20px;
+    text-align: initial;
   }
 `;
 

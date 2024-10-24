@@ -35,3 +35,10 @@
     width: 290px;
   }
 }
+
+/* botones del swiper */
+
+.swiperButtonCustom {
+  width: 50px; /* Ajusta el ancho que quieras */
+  height: 50px; /* Ajusta el alto que quieras */
+}

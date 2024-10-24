@@ -7,6 +7,9 @@ const nextConfig = withSvgr({
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ["assets.adidas.com", "acdn.mitiendanube.com"], // Agrega aquí los dominios permitidos
+  },
 });
 
 export default nextConfig;

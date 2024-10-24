@@ -2,6 +2,7 @@ import { TitleIngreso, LabelComp } from "ui/typography";
 import { MyInput } from "ui/input-search";
 import style from "./index.module.css";
 import { ButtonSaved, ButtonAccess } from "ui/buttons";
+import Image from "next/image";
 
 import { useRouter } from "next/router";
 
@@ -36,7 +37,12 @@ export function IngresoComponent() {
   return (
     <div className={style.containerMain}>
       <div className={style.containerImg}>
-        <img src="/images/ingreso.webp" alt="" />
+        <Image
+          src="/images/ingreso.webp"
+          alt="ingreso"
+          width={800}
+          height={1000}
+        />
       </div>
       <form onSubmit={handleSendForm} className={style.containerIngreso}>
         <div>

@@ -1,6 +1,7 @@
 import { MyTitleCard } from "ui/typography";
 import style from "./index.module.css";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export function Categories() {
   const router = useRouter();
@@ -20,24 +21,30 @@ export function Categories() {
       <MyTitleCard>Categorias</MyTitleCard>
       <div className={style.containerGrid}>
         <div onClick={handleZapatillas} className={style.item1}>
-          <img
+          <Image
             className={style.img1}
             src="/images-categories/category1.webp"
-            alt=""
+            alt="categoria-zapatilla"
+            width={1200}
+            height={841}
           />
         </div>
         <div onClick={handleBotas} className={style.item2}>
-          <img
+          <Image
             className={style.img2}
             src="/images-categories/category2.webp"
-            alt=""
+            alt="categoria-botita"
+            width={1200}
+            height={841}
           />
         </div>
         <div onClick={handleZapatos} className={style.item3}>
-          <img
+          <Image
             className={style.img3}
             src="/images-categories/category3.webp"
-            alt=""
+            alt="categoria-zapato"
+            width={1200}
+            height={841}
           />
         </div>
       </div>
@@ -45,24 +52,33 @@ export function Categories() {
       {/* container mobile */}
       <div className={style.containerMobile}>
         <div className={style.containerImg}>
-          <img
+          <Image
             className={style.img1}
             src="/images-categories/category1.webp"
-            alt=""
+            alt="categoria-zapatilla"
+            width={300}
+            height={300}
+            priority
           />
         </div>
         <div className={style.containerImg}>
-          <img
+          <Image
             className={style.img2}
             src="/images-categories/category2.webp"
-            alt=""
+            alt="categoria-botita"
+            width={300}
+            height={300}
+            priority
           />
         </div>
         <div className={style.containerImg}>
-          <img
+          <Image
             className={style.img3}
             src="/images-categories/category3.webp"
-            alt=""
+            alt="categoria-zapato"
+            width={300}
+            height={300}
+            priority
           />
         </div>
       </div>

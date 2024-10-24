@@ -33,16 +33,31 @@ class MyDocument extends Document {
         ),
       };
     } finally {
-      sheet.seal(); // Asegura que los estilos se liberen correctamente
+      sheet.seal();
     }
   }
 
   render() {
     return (
       <Html lang="es">
-        {" "}
-        {/* SEO: Especifica el idioma */}
         <Head>
+          {/* Favicon */}
+          <link rel="icon" href="/images/Logo.svg" />
+
+          {/* Preconexión a Google Fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@545&display=swap"
+            rel="stylesheet"
+          />
+
+          {/* SEO Meta tags */}
           <meta
             name="description"
             content="Descubre nuestra colección de zapatillas, zapatos y botas de moda para hombre y mujer. Compra en Modakelar con envíos rápidos y seguros."
@@ -50,21 +65,6 @@ class MyDocument extends Document {
           <meta
             name="keywords"
             content="zapatillas, zapatos, botas, calzado hombre, calzado mujer, zapatillas deportivas, moda"
-          />
-          <link rel="icon" href="/images/Logo.svg" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
         </Head>
         <body>

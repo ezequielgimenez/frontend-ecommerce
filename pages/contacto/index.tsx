@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import { MyTitleCard, PriceText, SubtitleItem } from "ui/typography";
 import style from "./index.module.css";

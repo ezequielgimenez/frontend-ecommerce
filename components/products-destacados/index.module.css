@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: auto;
+  min-height: 600px; /* Define una altura mínima */
 }
 
 /* 360 en adelante */

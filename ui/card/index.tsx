@@ -1,6 +1,7 @@
 import { TitleCard, SubtitleCard, BodyCard, TitleItem } from "ui/typography";
 import { ButtonBuy } from "ui/buttons";
 import style from "./index.module.css";
+import Image from "next/image";
 
 type myProps = {
   id?: string;
@@ -35,7 +36,13 @@ export function Card(p: myProps) {
     <div>
       <div className={style.cardMain}>
         <div className={style.containerImg}>
-          <img src={p.imgSrc} alt="" />
+          <Image
+            src={p.imgSrc}
+            alt="producto-img"
+            width={840}
+            height={840}
+            priority
+          />
         </div>
         <div className={style.containerTitleButton}>
           <div className={style.containerText}>

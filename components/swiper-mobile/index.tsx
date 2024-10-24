@@ -1,4 +1,5 @@
 import { TextMain } from "ui/typography";
+import Image from "next/image";
 
 // Import Swiper React components
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -41,7 +42,7 @@ export function SwiperMobile() {
       spaceBetween={50}
       slidesPerView={1} // Cambiamos a 1 para que ocupe todo el ancho
       autoplay={{ delay: 8000 }} // Autoplay activado con duración de 2 segundos
-      navigation // Flechas de navegación
+      navigation={false}
       pagination={{ clickable: true }} // Indicadores de paginación
     >
       <SwiperSlide>
@@ -55,7 +56,13 @@ export function SwiperMobile() {
             </form>
           </div>
           <div className={style.containerImg}>
-            <img src="/images/svgphone1.webp" alt="Banner 1" />
+            <Image
+              src="/images/svgphone1.webp"
+              alt="Banner 1"
+              width={288}
+              height={353}
+              loading="lazy"
+            />
           </div>
         </div>
       </SwiperSlide>
@@ -70,7 +77,13 @@ export function SwiperMobile() {
             </form>
           </div>
           <div className={style.containerImg}>
-            <img src="/images/svgphone2.webp" alt="Banner 2" />
+            <Image
+              src="/images/svgphone2.webp"
+              alt="Banner 2"
+              width={288}
+              height={353}
+              loading="lazy"
+            />
           </div>
         </div>
       </SwiperSlide>
@@ -85,7 +98,13 @@ export function SwiperMobile() {
             </form>
           </div>
           <div className={style.containerImg}>
-            <img src="/images/svgphone3.webp" alt="Banner 3" />
+            <Image
+              src="/images/svgphone3.webp"
+              alt="Banner 3"
+              width={288}
+              height={353}
+              loading="lazy"
+            />
           </div>
         </div>
       </SwiperSlide>

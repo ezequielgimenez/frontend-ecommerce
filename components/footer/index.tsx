@@ -5,6 +5,7 @@ import {
   TextCopyright,
 } from "ui/typography";
 import style from "./index.module.css";
+import Image from "next/image";
 
 export function MyFooter() {
   return (
@@ -28,13 +29,28 @@ export function MyFooter() {
           </div>
           <div className={style.containerImg}>
             <a href="http://www.facebook.com">
-              <img src="/images-social/facebook.svg" alt="" />
+              <Image
+                src="/images-social/facebook.svg"
+                alt="facebook-logo"
+                width={45}
+                height={30}
+              />
             </a>
             <a href="http://www.twitter.com">
-              <img src="/images-social/twitter.png" alt="" />
+              <Image
+                src="/images-social/twitter.png"
+                alt="twitter-logo"
+                width={45}
+                height={30}
+              />
             </a>
             <a href="http://www.instagram.com">
-              <img src="/images-social/instagram.png" alt="" />
+              <Image
+                src="/images-social/instagram.png"
+                alt="instagram-logo"
+                width={45}
+                height={30}
+              />
             </a>
           </div>
         </div>
