@@ -36,13 +36,7 @@ export function Card(p: myProps) {
     <div>
       <div className={style.cardMain}>
         <div className={style.containerImg}>
-          <Image
-            src={p.imgSrc}
-            alt="producto-img"
-            width={840}
-            height={840}
-            priority
-          />
+          <Image src={p.imgSrc} alt="" width={840} height={840} />
         </div>
         <div className={style.containerTitleButton}>
           <div className={style.containerText}>

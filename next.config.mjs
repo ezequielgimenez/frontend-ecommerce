@@ -8,7 +8,13 @@ const nextConfig = withSvgr({
     styledComponents: true,
   },
   images: {
-    domains: ["assets.adidas.com", "acdn.mitiendanube.com"], // Agrega aquí los dominios permitidos
+    domains: [
+      "assets.adidas.com",
+      "acdn.mitiendanube.com",
+      "media2.solodeportes.com.ar",
+      "nikearprod.vtexassets.com",
+      "static.nike.com",
+    ], // Agrega aquí los dominios permitidos
   },
 });
 
