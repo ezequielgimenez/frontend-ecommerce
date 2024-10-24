@@ -89,6 +89,7 @@ export const MyTitleCard = styled.p`
     font-size: 25px;
   }
   @media (min-width: 768px) {
+    text-align: initial;
     font-size: 30px;
   }
   @media (min-width: 1280px) {
