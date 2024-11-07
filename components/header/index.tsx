@@ -130,7 +130,9 @@ export function MyHeader() {
                 redirectItem1="/edit-profile"
                 logout="Cerrar sesión"
               >
-                {userData ? userData.data.name + " 🙎‍♂️" : "Usuario"}
+                {userData && userData.data && userData.data.name
+                  ? userData.data.name + " 🙎‍♂️"
+                  : "Mi Usuario"}
               </MenuButton>
             </div>
           </div>

@@ -55,6 +55,7 @@ export function MenuButton({
   const handleLogout = () => {
     setAnchorEl(null);
     localStorage.removeItem("token");
+    router.reload();
     router.push("/auth-access");
   };
 
